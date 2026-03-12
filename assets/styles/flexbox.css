@@ -1,0 +1,32 @@
+/* */
+.box{
+border: 1px solid black;
+}
+
+.bigbox{
+background-color: antiquewhite;
+color: #136308;
+padding: 15px;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+}
+
+.smallbox{
+    background-color: #136308;
+    color: antiquewhite;
+    margin-top: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.sidebar{
+    flex-grow: 1;
+}
+
+.maincontent{
+    flex-grow: 3;
+}
