@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <form action="mailto:tanaya.galea.g53878@mcast.edu.mt" 
+    method="post"
+    enctype="text/plain">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div id="divfirstname">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="name" placeholder="Sheryl Amanda" required>
+            </div>
+            
+            <div id="divlastname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname"name="surname" placeholder="Borg" required>
+            </div>
+
+            <div id="divage">
+                <input type="radio" id="age1" name="age" value="1">
+                <label for="age1">15 - 18</label>
+            </div>
+            
+            <br>
+            
+            <div>
+                <input type="radio" id="age2" name="age" value="2">
+                <label for="age2">19 - 25</label>
+            </div>
+            
+            <br>
+            
+            <div>
+                <input type="radio" id="age3" name="age" value="3">
+                <label for="age3">26 - 35</label>
+            </div>
+            
+            <br>
+            
+            <div>
+                <input type="radio" id="age4" name="age" value="4">
+                <label for="age4">36+</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="sherylPN@gmail.com" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mobilenumber">Mobile Number</label>
+                <input type="text" id="mobilenumber" name="mobilenumber" placeholder="9934 5678" required pattern="[0-9] {8}">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="offers" name="offercheckbox">
+                <label for="offers">Contact me about new offers</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message Details</legend>
+            <div>
+                <label for="department">Department:</label>
+                <select name="departmentchosen" id="department">
+                    <option value="" disabled selected>Please select department</option>
+                    <option value="1">Department Support</option>
+                    <option value="2">Technical Support</option>
+                </select>
+            </div>
+                
+            <div>
+                <label for="">Message:</label>
+                <textarea name="fullmessage" 
+                id="message"
+                placeholder="I have a problem with my account..."
+                cols="50" rows="10"
+                ></textarea>
+            </div>
+        </fieldset>
+
+        <div id="divbuttons">
+            <button type="submit">Send</button>
+            <button type="reset">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
